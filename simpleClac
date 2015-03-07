@@ -1,0 +1,24 @@
+#!/bin/bash
+ echo "Please Enter num1:"
+read x 
+ echo "Please Enter num2:"
+read y
+ echo "Please Enter an operand:"
+read z
+
+if [ $z = "+" ]
+ then
+  echo "Answer is:" `expr $x + $y`
+elif [ $z = "-" ]
+ then
+ echo "Answer is:"`expr $x - $y`
+elif [ $z = "/" ]
+ then
+ echo "Answer is:"`expr $x / $y`
+elif [ $z = "X" ]
+  then 
+ echo "Answer is:"`expr $x \* $y`
+else
+ echo "Please Enter a valid operand!!"
+fi
+

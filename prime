@@ -1,0 +1,19 @@
+#!/bin/bash
+echo "Please Enter a number:"
+read n 
+i=2
+prime=true
+while [ $i -lt $n ]
+do 
+if [ `expr $n % $i` = 0 ]
+then
+prime=false
+fi
+i=`expr $i + 1`
+done
+if [  $prime = true ]
+then
+echo "$n is Prime"
+else 
+echo "$n is Not Prime"
+fi

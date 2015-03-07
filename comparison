@@ -1,0 +1,15 @@
+#!/bin/bash
+echo "Please Enter num1:"
+read a
+echo "Please Enter num2:"
+read b
+if [ $a -lt $b ]
+then
+echo "$a is less than $b"
+elif [ $a -gt $b ]
+then
+echo "$a is greater than $b"
+else
+echo "$a is equal than $b"
+fi
+
